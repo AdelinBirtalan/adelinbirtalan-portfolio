@@ -710,6 +710,10 @@
     .bar p {
       display: none;
     }
+
+    .bar .fa-magnifying-glass, .bar .fa-volume-high {
+      display: none;
+    }
   
     .link-container {
       margin-left: auto;

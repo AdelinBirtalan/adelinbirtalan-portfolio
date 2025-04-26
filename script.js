@@ -139,13 +139,11 @@ function hideResumeButton() {
   resumeButton.style.visibility = "hidden";
 }
 
-// Function to show resume button
 function showResumeButton() {
   resumeButton.style.opacity = "1";
   resumeButton.style.visibility = "visible";
 }
 
-// Hide the resume button when opening any content page
 document
   .querySelector(".button-one")
   .addEventListener("click", hideResumeButton);
@@ -159,7 +157,6 @@ document
   .querySelector(".button-four")
   .addEventListener("click", hideResumeButton);
 
-// Show the resume button when closing any content page
 document
   .querySelector("#animatedPage-one .close-btn")
   .addEventListener("click", showResumeButton);

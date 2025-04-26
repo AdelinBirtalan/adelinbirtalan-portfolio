@@ -663,6 +663,18 @@ MEDIA QUERIES
     overflow: hidden;
   }
 
+  .resume {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .resume button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
   
   .navbar {
     position: fixed;
@@ -930,6 +942,16 @@ MEDIA QUERIES
     box-sizing: border-box;
   }
 
+  .resume {
+    top: 15px;
+    right: 15px;
+  }
+  
+  .resume button {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+
   .project-box {
     position: relative;
     width: 100%;
@@ -969,6 +991,16 @@ MEDIA QUERIES
     padding: 100px 10px 20px;
     min-height: 100vh;
     box-sizing: border-box;
+  }
+
+  .resume {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .resume button {
+    padding: 6px 12px;
+    font-size: 10px;
   }
 
   .project-box {
@@ -1012,5 +1044,10 @@ MEDIA QUERIES
 @media (max-width: 380px) {
   .link-container i {
     font-size: 1rem;
+  }
+
+  .resume button {
+    padding: 5px 10px;
+    font-size: 9px;
   }
 }

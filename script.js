@@ -1,5 +1,10 @@
 const imageContainer = document.querySelector(".logo-container");
 const image = imageContainer.querySelector("img");
+const resumeButton = document.querySelector(".resume");
+const contentPages = document.querySelectorAll(
+  ".content-one, .content-two, .content-three, .content-four"
+);
+const closeButtons = document.querySelectorAll(".close-btn");
 
 imageContainer.addEventListener("mousemove", (e) => {
   const { left, top, width, height } = imageContainer.getBoundingClientRect();
@@ -128,3 +133,42 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+function hideResumeButton() {
+  resumeButton.style.opacity = "0";
+  resumeButton.style.visibility = "hidden";
+}
+
+// Function to show resume button
+function showResumeButton() {
+  resumeButton.style.opacity = "1";
+  resumeButton.style.visibility = "visible";
+}
+
+// Hide the resume button when opening any content page
+document
+  .querySelector(".button-one")
+  .addEventListener("click", hideResumeButton);
+document
+  .querySelector(".button-two")
+  .addEventListener("click", hideResumeButton);
+document
+  .querySelector(".button-three")
+  .addEventListener("click", hideResumeButton);
+document
+  .querySelector(".button-four")
+  .addEventListener("click", hideResumeButton);
+
+// Show the resume button when closing any content page
+document
+  .querySelector("#animatedPage-one .close-btn")
+  .addEventListener("click", showResumeButton);
+document
+  .querySelector("#animatedPage-two .close-btn")
+  .addEventListener("click", showResumeButton);
+document
+  .querySelector("#animatedPage-three .close-btn")
+  .addEventListener("click", showResumeButton);
+document
+  .querySelector("#animatedPage-four .close-btn")
+  .addEventListener("click", showResumeButton);

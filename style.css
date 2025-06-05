@@ -628,6 +628,127 @@ MEDIA QUERIES
 ======================
 */
 
+/* MacBook Air and similar laptop screens */
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .info-container {
+    left: 15%;
+  }
+  
+  .info-container h1 {
+    font-size: 45px;
+  }
+  
+  .logo-container {
+    left: 75%;
+  }
+  
+  .logo-container img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .text-container {
+    width: 50rem;
+    padding: 40px;
+    right: 20px;
+  }
+  
+  .text-container h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  
+  .text-container p {
+    font-size: 22px;
+  }
+  
+  .project-box img {
+    width: 350px;
+  }
+  
+  .grid-container {
+    margin-top: 35rem;
+  }
+  
+  .skill-box {
+    width: 220px;
+    height: 20rem;
+  }
+  
+  .skill-box i {
+    font-size: 7rem;
+  }
+
+  /* MacBook Air and similar laptop screens */
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .info-container {
+    left: 15%;
+  }
+  
+  .info-container h1 {
+    font-size: 45px;
+  }
+  
+  .logo-container {
+    left: 75%;
+  }
+  
+  .logo-container img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .text-container {
+    width: 50rem;
+    padding: 40px;
+    right: 5px;
+  }
+  
+  .text-container h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  
+  .text-container p {
+    font-size: 22px;
+  }
+  
+  .project-box img {
+    width: 350px;
+  }
+  
+  .grid-container {
+    margin-top: 35rem;
+  }
+  
+  .skill-box {
+    width: 220px;
+    height: 20rem;
+  }
+  
+  .skill-box i {
+    font-size: 7rem;
+  }
+
+  .link-container {
+  margin-left: 25rem;
+}
+
+.bar .fa-wifi {
+  margin-left: 20rem;
+}
+
+.content-one img {
+  width: 500px;
+}
+
+.text-container {
+  right: 50px;
+  width: 45rem;
+}
+}
+}
+
 @media (max-width: 1400px) and (orientation: landscape) {
   .contact-container {
     justify-content: flex-start;
@@ -1060,4 +1181,7 @@ MEDIA QUERIES
     padding: 5px 10px;
     font-size: 9px;
   }
+
+  
 }
+
